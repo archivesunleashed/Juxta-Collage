@@ -38,15 +38,27 @@ Web archive data is a rich source for studying the recent past. Web archives pre
 
 The following tutorial will outline how to create a JUXTA collage using an image dataset generated through the [Archives Research Compute Hub (ARCH)](https://support.archive-it.org/hc/en-us/articles/360061122492-Introduction-to-the-Archive-It-Research-Services-Cloud). By transforming image data, researchers have an opportunity to explore a web archive collection interactively.
 
+<p align="right">
+  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+</p>
+
 ## What is Juxta?
 
 Juxta is a shell script which generates a collage of images for display on a webpage. You can learn more about the Juxta script through its GitHub page: [https://github.com/tokee/juxta](https://github.com/tokee/juxta).
+
+<p align="right">
+  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+</p>
 
 ## Considerations
 
 Web archive data tends to be quite large and often outpaces the capacity of local storage on your computer. You may want to consider working with dedicated storage (HDD, SSD) or servers.
  
 This tutorial was created using macOS.
+
+<p align="right">
+  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+</p>
 
 ## Pre-requisites
 
@@ -60,6 +72,10 @@ On Mac OS, both imagemagick and jq can be installed using brew
 * `brew install imagemagick` and `brew install ghostscript` for imagemagick
 * `brew install jq` for jq
 
+<p align="right">
+  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+</p>
+
 * * *
 
 # Creating a JUXTA Image Collage
@@ -69,6 +85,10 @@ On Mac OS, both imagemagick and jq can be installed using brew
 Within ARCH, select a collection, and generate a new dataset from the file formats category called extract image information.
 
 [insert video here]
+
+<p align="right">
+  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+</p>
 
 ## 2. Copy the derivative URL
 
@@ -119,6 +139,10 @@ Using your terminal window, navigate to the images directory. Then use the follo
 
 > NOTE: Downloading the images will take time! Do not close your terminal window.
 
+<p align="right">
+  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+</p>
+
 ## 4. Clone Juxta
 
 Navigate to [https://github.com/tokee/juxta](https://github.com/tokee/juxta). Use the URL provided under the Code Tab to clone. 
@@ -128,6 +152,10 @@ Clone Juxta within your main directory by using the following command
 `Git clone https://github.com/tokee/juxta.git`
 
 Note your path to Juxta; for simplicity's sake in this example, we’ve cloned JUXTA to our main working directory `/Users/fritz/Desktop/13709Juxta`
+
+<p align="right">
+  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+</p>
 
 ## 5. Create .dat file
 
@@ -140,6 +168,10 @@ For instance:		`/Users/fritz/Desktop/13709Juxta`
 Run the following command to find the images and redirect the output to a .dat file
 
 `find images > images.dat`
+
+<p align="right">
+  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+</p>
 
 ## 6. Create JUXTA files
 
@@ -161,6 +193,10 @@ Before launching a local server, navigate to the example directory created with 
 
 `cd example`
 
+<p align="right">
+  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+</p>
+
 ## 7. Launch Local Server
 
 Now that all the JUXTA files have been created we will use Python to serve files from a local directory via HTTP. This will allow you to display and explore the image collage through the web browser.
@@ -170,3 +206,7 @@ Now that all the JUXTA files have been created we will use Python to serve files
 To launch the server, enter the local host address as a URL.
 
 `Localhost:8000`
+
+<p align="right">
+  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+</p>
