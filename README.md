@@ -7,11 +7,28 @@
 Welcome! The following tutorial provides instructions for building an image collage using Juxta shell script and image information dataset generated through the Archives Research Compute Hub (ARCH) platform.
 
 # Table of Contents
-[Overview](https://github.com/archivesunleashed/Juxta-Collage#overview)
-[What is a Juxta?](https://github.com/archivesunleashed/Juxta-Collage####whatisajuxta)
-[Considerations](https://github.com/archivesunleashed/Juxta-Collage####considerations)
-[Pre-requisites](https://github.com/archivesunleashed/Juxta-Collage##prerequisites)
+- [Overview](https://github.com/archivesunleashed/Juxta-Collage##overview)
+- [What is a Juxta?](https://github.com/archivesunleashed/Juxta-Collage##whatisajuxta)
+- [Considerations](https://github.com/archivesunleashed/Juxta-Collage##considerations)
+- [Pre-requisites](https://github.com/archivesunleashed/Juxta-Collage##Pre-requisites)
+- [Creating a JUXTA Image Collage](https://github.com/archivesunleashed/Juxta-Collage#creating-a-juxta-image-collage)
+  - [1. ARCH - Run image information job](https://github.com/archivesunleashed/Juxta-Collage#1-arch---run-image-information-job)
+  - [2. Copy the derivative URL](https://github.com/archivesunleashed/Juxta-Collage#2-copy-the-derivative-url)
+  - [3. Working with Google Collab Notebook](https://github.com/archivesunleashed/Juxta-Collage#3-working-with-google-collab-notebook)
+  - [4. Clone Juxta](https://github.com/archivesunleashed/Juxta-Collage#4-clone-juxta)
+  - [5. Create .dat file](https://github.com/archivesunleashed/Juxta-Collage#5-create-dat-file)
+  - [6. Create JUXTA files](https://github.com/archivesunleashed/Juxta-Collage#6-create-juxta-files)
+  - [7. Launch Local Server](https://github.com/archivesunleashed/Juxta-Collage#7-launch-local-server)
 
+## Acknowledgements
+
+We recognize the following work and contributions which have made this tutorial possible.
+
+[Toke Eskildsen](https://github.com/tokee) is the primary developer and contributor of the juxta script. 
+
+The following tutorial was collaboratively designed by [Nick Ruest](https://ruebot.net/) and [Samantha Fritz](https://github.com/SamFritz).
+
+Google Collab notebooks were built by Nick Ruest, with datasets examples generated using the Archives Research Compute Hub (ARCH).
 
 * * *
 
@@ -153,15 +170,3 @@ Now that all the JUXTA files have been created we will use Python to serve files
 To launch the server, enter the local host address as a URL.
 
 `Localhost:8000`
-
-* * *
-
-## Acknowledgements
-
-We recognize the following work and contributions which have made this tutorial possible.
-
-[Toke Eskildsen](https://github.com/tokee) is the primary developer and contributor of the juxta script. 
-
-The following tutorial was collaboratively designed by [Nick Ruest](https://ruebot.net/) and [Samantha Fritz](https://github.com/SamFritz).
-
-Google Collab notebooks were built by Nick Ruest, with datasets examples generated using the Archives Research Compute Hub (ARCH).
