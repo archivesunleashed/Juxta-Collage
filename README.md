@@ -14,7 +14,7 @@ Welcome! The following tutorial provides instructions for building an image coll
 - [Creating a JUXTA Image Collage](https://github.com/archivesunleashed/Juxta-Collage#creating-a-juxta-image-collage)
   - [1. ARCH - Run image information job](https://github.com/archivesunleashed/Juxta-Collage#1-arch---run-image-information-job)
   - [2. Copy the derivative URL](https://github.com/archivesunleashed/Juxta-Collage#2-copy-the-derivative-url)
-  - [3. Working with Google Collab Notebook](https://github.com/archivesunleashed/Juxta-Collage#3-working-with-google-collab-notebook)
+  - [3. Working with Google Colab Notebook](https://github.com/archivesunleashed/Juxta-Collage#3-working-with-google-colab-notebook)
   - [4. Clone Juxta](https://github.com/archivesunleashed/Juxta-Collage#4-clone-juxta)
   - [5. Create .dat file](https://github.com/archivesunleashed/Juxta-Collage#5-create-dat-file)
   - [6. Create JUXTA files](https://github.com/archivesunleashed/Juxta-Collage#6-create-juxta-files)
@@ -28,7 +28,7 @@ We recognize the following work and contributions which have made this tutorial 
 
 The following tutorial was collaboratively designed by [Nick Ruest](https://ruebot.net/) and [Samantha Fritz](https://github.com/SamFritz).
 
-Google Collab notebooks were built by Nick Ruest, with datasets examples generated using the Archives Research Compute Hub (ARCH).
+Google Colab notebooks were built by Nick Ruest, with datasets examples generated using the Archives Research Compute Hub (ARCH).
 
 * * *
 
@@ -70,7 +70,7 @@ On Mac OS, both imagemagick and jq can be installed using brew
 
 ## 1. ARCH - Run image information job
 
-Within ARCH, select a collection, and generate a new dataset from the file formats category called extract image information.
+Within ARCH, select a collection and generate a new dataset from the file formats category called extract image information.
 
 [insert video here]
 
@@ -92,9 +92,9 @@ On the dataset summary page, right-click on the download icon and select “copy
   <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
-## 3. Working with Google Collab Notebook
+## 3. Working with Google Colab Notebook
 
-Create a copy of the notebook: https://colab.research.google.com/drive/14tlccAWkvTwy5dDYNlUhmN2hkMV1rxPj?usp=sharing
+Create a copy of the [Image Information Download Urls](https://colab.research.google.com/drive/14tlccAWkvTwy5dDYNlUhmN2hkMV1rxPj?usp=sharing) notebook via Google Colab.
 
 [insert video here]
 
@@ -175,7 +175,7 @@ We are creating a new directory for all of the JUXTA files. You will need to mak
 
 Here’s a quick breakdown of what this line of code does:
 
-|                                 |                                                                                                                                                                                                                                                                                                    |
+|  Code Snippet                               |       Code Functionality                                                                                                                                                                                                                                                                                             |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `THREADS=4`                       | You may need to change the number of threads. This example opts for four threads, with a total of 8 cores available. As this tutorial uses local computer storage, changing the threads ultimately means the laptop is used for processing JUXTA files but can continue to be used for other work. |
 | `/Users/fritz/Desktop/13709Juxta` | Change to the path of where you’ve cloned Jutxa.                                                                                                                                                                                                                                                   |
@@ -195,7 +195,7 @@ Now that all the JUXTA files have been created we will use Python to serve files
 
 `python3 -m http.server`
 
-To launch the server, enter the local host address as a URL.
+To launch the server, enter the local host address as a URL in a browser of your choosing.
 
 `Localhost:8000`
 
