@@ -6,6 +6,14 @@
 
 Welcome! The following tutorial provides instructions for building an image collage using Juxta shell script and image information dataset generated through the Archives Research Compute Hub (ARCH) platform.
 
+# Table of Contents
+[Overview](https://github.com/archivesunleashed/Juxta-Collage#overview)
+[What is a Juxta?](https://github.com/archivesunleashed/Juxta-Collage####whatisajuxta)
+[Considerations](https://github.com/archivesunleashed/Juxta-Collage####considerations)
+[Pre-requisites](https://github.com/archivesunleashed/Juxta-Collage##prerequisites)
+
+
+* * *
 
 ## Overview
 
@@ -16,18 +24,6 @@ The following tutorial will outline how to create a JUXTA collage using an image
 ## What is Juxta?
 
 Juxta is a shell script which generates a collage of images for display on a webpage. You can learn more about the Juxta script through its GitHub page: [https://github.com/tokee/juxta](https://github.com/tokee/juxta).
-
-## Acknowledgements
-
-We recognize the following work and contributions which have made this tutorial possible.
-
-[Toke Eskildsen](https://github.com/tokee) is the primary developer and contributor of the juxta script. 
-
-The following tutorial was collaboratively designed by [Nick Ruest](https://ruebot.net/) and [Samantha Fritz](https://github.com/SamFritz).
-
-Google Collab notebooks were built by Nick Ruest, with datasets examples generated using the Archives Research Compute Hub (ARCH).
-
-* * *
 
 ## Considerations
 
@@ -157,3 +153,15 @@ Now that all the JUXTA files have been created we will use Python to serve files
 To launch the server, enter the local host address as a URL.
 
 `Localhost:8000`
+
+* * *
+
+## Acknowledgements
+
+We recognize the following work and contributions which have made this tutorial possible.
+
+[Toke Eskildsen](https://github.com/tokee) is the primary developer and contributor of the juxta script. 
+
+The following tutorial was collaboratively designed by [Nick Ruest](https://ruebot.net/) and [Samantha Fritz](https://github.com/SamFritz).
+
+Google Collab notebooks were built by Nick Ruest, with datasets examples generated using the Archives Research Compute Hub (ARCH).
