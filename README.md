@@ -43,4 +43,117 @@ To complete this tutorial, you will need three things:
 * The “[imagemagick](https://imagemagick.org/script/download.php#macosx)” package. To check if it is installed, run `convert -v` in your console.
 * The “[jq](https://stedolan.github.io/jq/)” package. To check if it is installed, run `jq` in your console.
 
-On Mac OS, both imagemagick and jq can be installed using brew (`brew install imagemagick` and `brew install ghostscript` for imagemagick; and `brew install jq` for jq). 
+On Mac OS, both imagemagick and jq can be installed using brew
+* `brew install imagemagick` and `brew install ghostscript` for imagemagick
+* `brew install jq` for jq
+
+* * *
+
+# Creating a JUXTA Image Collage
+
+## 1. ARCH - Run image information job
+
+Within ARCH, select a collection, and generate a new dataset from the file formats category called extract image information.
+
+[insert video here]
+
+## 2. Copy the derivative URL
+
+On the dataset summary page, right-click on the download icon and select “copy link.” This will be the derivate URL needed for working with images in the Notebook.
+
+[insert video here]
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/7362321/200409026-8016b6a8-f6be-4534-8732-35a38a05d440.png" alt="Right click on download to copy dataset URL within ARCH" width="600">
+</p>
+
+## 3. Working with Google Collab Notebook
+
+Create a copy of the notebook: https://colab.research.google.com/drive/14tlccAWkvTwy5dDYNlUhmN2hkMV1rxPj?usp=sharing
+
+[insert video here]
+
+Working from the copied notebook now, you will start off by changing the title. You may find it easiest to note the collection number in the title if you plan to work with multiple copies of the template. 
+
+There are a few cells that will need a change in information.
+
+First, change the URL listed in the first cell to the URL of the image information datasets (step 3). The curl command is used to **transfer data to and from a server**. In this case, the notebook calls out to the extracted image information dataset from ARCH. 
+
+In cell six, which identifies the Wayback URL, change the collection id to match the collection we are currently working with.
+
+Finally, in the last cell change the collection id in the CSV title. This title could be anything that’s meaningful to you as a researcher, but we do suggest maintaining consistency by using the collection id.
+
+[insert video here]
+
+Located at the top, click on the **Runtime** menu and select **Run All**. Alternatively, you can manually click on each play button. The pre-scripted actions in this notebook will ultimately generate a .txt file with formatted image URLs, which can then be used to fetch and download the images from this web archive collection using a single command line function.
+
+[insert video here]
+
+In the right-hand pane, which is collapsed by default, click on the file folder icon and download the **.txt** file to either your desktop or a server.
+
+[insert video here]
+
+Create a directory (folder) to house the recently downloaded .txt file. For this example, a directory called **13709Juxta** was created on a local desktop.
+
+Next, create a subfolder in the new directory and call it **images**.
+
+Our example path to our main working directory looks like this:
+`/Users/fritz/Desktop/13709Juxta`
+
+Using your terminal window, navigate to the images directory. Then use the following command to download all the images from the text file to the images folder. This directory of images is what will be used to create the Juxta collage.
+
+`wget --random-wait -i ../13709_image_urls.txt`
+
+> NOTE: Downloading the images will take time! Do not close your terminal window.
+
+## 4. Clone Juxta
+
+Navigate to [https://github.com/tokee/juxta](https://github.com/tokee/juxta). Use the URL provided under the Code Tab to clone. 
+
+Clone Juxta within your main directory by using the following command
+
+`Git clone https://github.com/tokee/juxta.git`
+
+Note your path to Juxta; for simplicity's sake in this example, we’ve cloned JUXTA to our main working directory `/Users/fritz/Desktop/13709Juxta`
+
+## 5. Create .dat file
+
+A **.dat** file is a “generic data file that contains important information about the program used to create the particular file.” For the purposes of generating a JUXTA image collage, we will be converting the jpg image files downloaded from the replay URLs and redirecting the output as a .dat file format.
+
+From your terminal, navigate to be one directory above where the images are saved.
+
+For instance:		`/Users/fritz/Desktop/13709Juxta`
+
+Run the following command to find the images and redirect the output to a .dat file
+
+`find images > images.dat`
+
+## 6. Create JUXTA files
+
+Next, we are going to create all of the juxta files and tiles needed to view in a web browser. 
+
+We are creating a new directory for all of the JUXTA files. You will need to make a few modifications to the command below: 
+
+`THREADS=4 /Users/fritz/Desktop/13709Juxta/juxta/juxta.sh images.dat example`
+
+Here’s a quick breakdown of what this line of code does:
+
+|                                 |                                                                                                                                                                                                                                                                                                    |
+|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `THREADS=4`                       | You may need to change the number of threads. This example opts for four threads, with a total of 8 cores available. As this tutorial uses local computer storage, changing the threads ultimately means the laptop is used for processing JUXTA files but can continue to be used for other work. |
+| `/Users/fritz/Desktop/13709Juxta` | Change to the path of where you’ve cloned Jutxa.                                                                                                                                                                                                                                                   |
+| `example`                         | This will be the name of the directory in which Juxta formatted files are created. You can change this to whatever makes sense for you, but be sure to avoid spaces.                                                                                                                               |
+
+Before launching a local server, navigate to the example directory created with the command above.
+
+`cd example`
+
+## 7. Launch Local Server
+
+Now that all the JUXTA files have been created we will use Python to serve files from a local directory via HTTP. This will allow you to display and explore the image collage through the web browser.
+
+`python3 -m http.server`
+
+To launch the server, enter the local host address as a URL.
+
+`Localhost:8000`
