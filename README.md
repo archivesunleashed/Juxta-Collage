@@ -102,11 +102,11 @@ Working from the copied notebook now, you will start off by changing the title. 
 
 There are a few cells that will need a change in information.
 
-First, change the URL listed in the first cell to the URL of the image information datasets (step 3). The curl command is used to **transfer data to and from a server**. In this case, the notebook calls out to the extracted image information dataset from ARCH. 
+  1. First, <mark>change the URL listed in the first cellto the URL of the image information datasets</mark> we copied in the previous step. The curl command is used to **transfer data to and from a server**. In this case, the notebook calls out to the extracted image information dataset from ARCH. 
 
-In cell six, which identifies the Wayback URL, change the collection id to match the collection we are currently working with.
+  2. In cell six, which identifies the Wayback URL, <mark>change the collection id to match the collection</mark> we are currently working with.
 
-Finally, in the last cell change the collection id in the CSV title. This title could be anything that’s meaningful to you as a researcher, but we do suggest maintaining consistency by using the collection id.
+  3. Finally, in the last cell <mark>change the collection id in the CSV title</mark>. This title could be anything that’s meaningful to you as a researcher, but we do suggest maintaining consistency by using the collection id.
 
 [insert video here]
 
