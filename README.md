@@ -151,7 +151,7 @@ Note your path to Juxta; for simplicity's sake in this example, we’ve cloned J
 
 ## 5. Create .dat file
 
-A **.dat** file is a “generic data file that contains important information about the program used to create the particular file.” For the purposes of generating a JUXTA image collage, we will be converting the jpg image files downloaded from the replay URLs and redirecting the output as a .dat file format.
+A **.dat** file is a “generic data file that contains important information about the program used to create the particular file.”[^1] For the purposes of generating a JUXTA image collage, we will be converting the jpg image files downloaded from the replay URLs and redirecting the output [^2] as a .dat file format.
 
 From your terminal, navigate to be one directory above where the images are saved.
 
@@ -202,3 +202,8 @@ To launch the server, enter the local host address as a URL in a browser of your
 <p align="right">
   <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
 </p>
+
+### References
+
+[^1]: Otachi, Elsie. (2020). "How to Read and Open .DAT Files in Windows"[https://www.online-tech-tips.com/computer-tips/how-to-open-dat-files/](https://www.online-tech-tips.com/computer-tips/how-to-open-dat-files/)
+[^2]: "Using COmmand Symbols" [https://sourcedaddy.com/windows-7/using-command-symbols.html](https://sourcedaddy.com/windows-7/using-command-symbols.html)
