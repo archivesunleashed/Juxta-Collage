@@ -61,7 +61,7 @@ On Mac OS, both imagemagick and jq can be installed using brew
 * `brew install jq` for jq
 
 <p align="right">
-  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+  <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
 * * *
@@ -75,7 +75,7 @@ Within ARCH, select a collection and generate a new dataset from the file format
 ![Run ARCH dataset](https://github.com/archivesunleashed/Juxta-Collage/blob/77259b474bae859af20da2a99308645c53e8f56c/Juxta-2_generate_dataset.gif)
 
 <p align="right">
-  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+  <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
 ## 2. Copy the derivative URL
@@ -87,7 +87,7 @@ Once the dataset has been generated, click on "View Dataset" to navigate to the 
 </p>
 
 <p align="right">
-  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+  <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
 ## 3. Working with Google Colab Notebook
@@ -130,7 +130,7 @@ Using your terminal window, navigate to the images directory. Then use the follo
 > NOTE: Downloading the images will take time! Do not close your terminal window.
 
 <p align="right">
-  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+  <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
 ## 4. Clone Juxta
@@ -144,7 +144,7 @@ Clone Juxta within your main directory by using the following command
 Note your path to Juxta; for simplicity's sake in this example, we’ve cloned JUXTA to our main working directory `/Users/fritz/Desktop/13709Juxta`
 
 <p align="right">
-  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+  <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
 ## 5. Create .dat file
@@ -160,7 +160,7 @@ Run the following command to find the images and redirect the output to a .dat f
 `find images > images.dat`
 
 <p align="right">
-  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+  <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
 ## 6. Create JUXTA files
@@ -184,7 +184,7 @@ Before launching a local server, navigate to the example directory created with 
 `cd example`
 
 <p align="right">
-  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+  <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
 ## 7. Launch Local Server
@@ -198,7 +198,7 @@ To launch the server, enter the local host address as a URL in a browser of your
 `Localhost:8000`
 
 <p align="right">
-  <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
+  <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
 ### References
