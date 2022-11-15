@@ -72,7 +72,7 @@ On Mac OS, both imagemagick and jq can be installed using brew
 
 Within ARCH, select a collection and generate a new dataset from the file formats category called extract image information.
 
-[insert video here]
+![Run ARCH dataset](https://github.com/archivesunleashed/Juxta-Collage/blob/77259b474bae859af20da2a99308645c53e8f56c/Juxta-2_generate_dataset.gif)
 
 <p align="right">
   <a href="https://github.com/archivesunleashed/Juxta-Collage/edit/main/README.md#table-of-contents"><b>Back to ToC</b></a>
@@ -81,8 +81,6 @@ Within ARCH, select a collection and generate a new dataset from the file format
 ## 2. Copy the derivative URL
 
 On the dataset summary page, right-click on the download icon and select “copy link.” This will be the derivate URL needed for working with images in the Notebook.
-
-[insert video here]
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/7362321/200409026-8016b6a8-f6be-4534-8732-35a38a05d440.png" alt="Right click on download to copy dataset URL within ARCH" width="600">
@@ -96,7 +94,7 @@ On the dataset summary page, right-click on the download icon and select “copy
 
 Create a copy of the [Image Information Download Urls](https://colab.research.google.com/drive/14tlccAWkvTwy5dDYNlUhmN2hkMV1rxPj?usp=sharing) notebook via Google Colab.
 
-![Watch Vide](https://github.com/archivesunleashed/Juxta-Collage/blob/055a3a4ca2e6e2ee816d62b7d8a836bbb4d6d48d/Juxta-1_colab_copy.gif)
+![Copy Colab Notebook](https://github.com/archivesunleashed/Juxta-Collage/blob/055a3a4ca2e6e2ee816d62b7d8a836bbb4d6d48d/Juxta-1_colab_copy.gif)
 
 Working from the copied notebook now, you will start off by changing the title. You may find it easiest to note the collection number in the title if you plan to work with multiple copies of the template. 
 
@@ -108,15 +106,15 @@ There are a few cells that will need a change in information.
 
   3. Finally, in the last cell <mark>change the collection id in the CSV title</mark>. This title could be anything that’s meaningful to you as a researcher, but we do suggest maintaining consistency by using the collection id.
 
-[insert video here]
+![Change collection information in notebook](https://github.com/archivesunleashed/Juxta-Collage/blob/77259b474bae859af20da2a99308645c53e8f56c/Juxta-5_change_colab_collection+URL.gif)
 
 Located at the top, click on the **Runtime** menu and select **Run All**. Alternatively, you can manually click on each play button. The pre-scripted actions in this notebook will ultimately generate a .txt file with formatted image URLs, which can then be used to fetch and download the images from this web archive collection using a single command line function.
 
-[insert video here]
+![Runtime in notebook](https://github.com/archivesunleashed/Juxta-Collage/blob/77259b474bae859af20da2a99308645c53e8f56c/Juxta-6_colab_runtime.gif)
 
 In the right-hand pane, which is collapsed by default, click on the file folder icon and download the **.txt** file to either your desktop or a server.
 
-[insert video here]
+![Download csv from notebook](https://github.com/archivesunleashed/Juxta-Collage/blob/77259b474bae859af20da2a99308645c53e8f56c/Juxta-7_colab_download.gif)
 
 Create a directory (folder) to house the recently downloaded .txt file. For this example, a directory called **13709Juxta** was created on a local desktop.
 
