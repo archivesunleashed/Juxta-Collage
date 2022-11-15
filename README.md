@@ -19,6 +19,8 @@ Welcome! The following tutorial provides instructions for building an image coll
   - [5. Create .dat file](https://github.com/archivesunleashed/Juxta-Collage#5-create-dat-file)
   - [6. Create JUXTA files](https://github.com/archivesunleashed/Juxta-Collage#6-create-juxta-files)
   - [7. Launch Local Server](https://github.com/archivesunleashed/Juxta-Collage#7-launch-local-server)
+- [References](https://github.com/archivesunleashed/Juxta-Collage#references)
+- [License](https://github.com/archivesunleashed/Juxta-Collage#license)
 
 ## Acknowledgements
 
@@ -201,7 +203,20 @@ To launch the server, enter the local host address as a URL in a browser of your
   <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
-### References
+## License
+
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
+## References
 
 [^1]: Otachi, Elsie. (2020). "How to Read and Open .DAT Files in Windows"[https://www.online-tech-tips.com/computer-tips/how-to-open-dat-files/](https://www.online-tech-tips.com/computer-tips/how-to-open-dat-files/)
 [^2]: "Using COmmand Symbols" [https://sourcedaddy.com/windows-7/using-command-symbols.html](https://sourcedaddy.com/windows-7/using-command-symbols.html)
