@@ -96,7 +96,7 @@ On the dataset summary page, right-click on the download icon and select “copy
 
 Create a copy of the [Image Information Download Urls](https://colab.research.google.com/drive/14tlccAWkvTwy5dDYNlUhmN2hkMV1rxPj?usp=sharing) notebook via Google Colab.
 
-[insert video here]
+![Watch Vide](https://github.com/archivesunleashed/Juxta-Collage/blob/055a3a4ca2e6e2ee816d62b7d8a836bbb4d6d48d/Juxta-1_colab_copy.gif)
 
 Working from the copied notebook now, you will start off by changing the title. You may find it easiest to note the collection number in the title if you plan to work with multiple copies of the template. 
 
