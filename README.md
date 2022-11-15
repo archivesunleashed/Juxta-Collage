@@ -100,11 +100,11 @@ Working from the copied notebook now, you will start off by changing the title. 
 
 There are a few cells that will need a change in information.
 
-  1. First, <mark>change the URL listed in the first cellto the URL of the image information datasets</mark> we copied in the previous step. The curl command is used to **transfer data to and from a server**. In this case, the notebook calls out to the extracted image information dataset from ARCH. 
+  1. In the first cell, change the URL listed to the URL of the image information dataset we copied in the previous step. The curl command is used to **transfer data to and from a server**. In this case, the notebook calls out to the extracted image information dataset from ARCH. 
 
-  2. In cell six, which identifies the Wayback URL, <mark>change the collection id to match the collection</mark> we are currently working with.
+  2. In cell six, which identifies the Wayback URL, change the collection id to match the collection we are currently working with.
 
-  3. Finally, in the last cell <mark>change the collection id in the CSV title</mark>. This title could be anything that’s meaningful to you as a researcher, but we do suggest maintaining consistency by using the collection id.
+  3. Finally, in the last cell, change the collection id in the CSV title. This title could be anything meaningful to you as a researcher, but we do suggest maintaining consistency by using the collection id.
 
 ![Change collection information in notebook](https://github.com/archivesunleashed/Juxta-Collage/blob/77259b474bae859af20da2a99308645c53e8f56c/Juxta-5_change_colab_collection+URL.gif)
 
@@ -165,7 +165,7 @@ Run the following command to find the images and redirect the output to a .dat f
 
 ## 6. Create JUXTA files
 
-Next, we are going to create all of the juxta files and tiles needed to view in a web browser. 
+Next, will create all of the juxta files and tiles needed to view in a web browser. 
 
 We are creating a new directory for all of the JUXTA files. You will need to make a few modifications to the command below: 
 
@@ -189,7 +189,7 @@ Before launching a local server, navigate to the example directory created with 
 
 ## 7. Launch Local Server
 
-Now that all the JUXTA files have been created we will use Python to serve files from a local directory via HTTP. This will allow you to display and explore the image collage through the web browser.
+Now that all the JUXTA files have been created, we will use Python to serve files from a local directory via HTTP. This will allow you to display and explore the image collage through the web browser.
 
 `python3 -m http.server`
 
