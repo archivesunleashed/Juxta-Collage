@@ -80,7 +80,7 @@ Within ARCH, select a collection and generate a new dataset from the file format
 
 ## 2. Copy the derivative URL
 
-On the dataset summary page, right-click on the download icon and select “copy link.” This will be the derivate URL needed for working with images in the Notebook.
+Once the dataset has been generated, click on "View Dataset" to navigate to the summary page. Scroll down to the download icon, right-click  and select “copy link.” This will be the derivate URL needed for working with images in the Notebook.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/7362321/200409026-8016b6a8-f6be-4534-8732-35a38a05d440.png" alt="Right click on download to copy dataset URL within ARCH" width="600">
