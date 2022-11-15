@@ -7,10 +7,10 @@
 Welcome! The following tutorial provides instructions for building an image collage using Juxta shell script and image information dataset generated through the Archives Research Compute Hub (ARCH) platform.
 
 # Table of Contents
-- [Overview](https://github.com/archivesunleashed/Juxta-Collage##overview)
-- [What is a Juxta?](https://github.com/archivesunleashed/Juxta-Collage##whatisajuxta)
-- [Considerations](https://github.com/archivesunleashed/Juxta-Collage##considerations)
-- [Pre-requisites](https://github.com/archivesunleashed/Juxta-Collage##Pre-requisites)
+- [Overview](https://github.com/archivesunleashed/Juxta-Collage#overview)
+- [What is a Juxta?](https://github.com/archivesunleashed/Juxta-Collage#what-is-juxta)
+- [Considerations](https://github.com/archivesunleashed/Juxta-Collage#considerations)
+- [Pre-requisites](https://github.com/archivesunleashed/Juxta-Collage#pre-requisites)
 - [Creating a JUXTA Image Collage](https://github.com/archivesunleashed/Juxta-Collage#creating-a-juxta-image-collage)
   - [1. ARCH - Run image information job](https://github.com/archivesunleashed/Juxta-Collage#1-arch---run-image-information-job)
   - [2. Copy the derivative URL](https://github.com/archivesunleashed/Juxta-Collage#2-copy-the-derivative-url)
