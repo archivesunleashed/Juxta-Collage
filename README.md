@@ -55,11 +55,11 @@ This tutorial was created using macOS.
 To complete this tutorial, you will need three things:
 
 * The ARCH “image information” derivative
-* The “[imagemagick](https://imagemagick.org/script/download.php#macosx)” package. To check if it is installed, run `convert -v` in your console.
+* The “[ImageMagick](https://imagemagick.org/script/download.php#macosx)” package. To check if it is installed, run `convert -v` in your console.
 * The “[jq](https://stedolan.github.io/jq/)” package. To check if it is installed, run `jq` in your console.
 
-On Mac OS, both imagemagick and jq can be installed using brew
-* `brew install imagemagick` and `brew install ghostscript` for imagemagick
+On Mac OS, both ImageMagick and jq can be installed using brew
+* `brew install imagemagick` and `brew install ghostscript` for ImageMagick
 * `brew install jq` for jq
 
 <p align="right">
@@ -82,7 +82,7 @@ Within ARCH, select a collection and generate a new dataset from the file format
 
 ## 2. Copy the derivative URL
 
-Once the dataset has been generated, click on "View Dataset" to navigate to the summary page. Scroll down to the download icon, right-click  and select “copy link.” This will be the derivate URL needed for working with images in the Notebook.
+Once the dataset has been generated, click on "View Dataset" to navigate to the summary page. Scroll down to the download icon, right-click  and select “copy link.” This will be the derivate URL needed for working with images in the notebook.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/7362321/200409026-8016b6a8-f6be-4534-8732-35a38a05d440.png" alt="Right click on download to copy dataset URL within ARCH" width="600">
@@ -106,7 +106,7 @@ There are a few cells that will need a change in information.
 
   2. In cell six, which identifies the Wayback URL, change the collection id to match the collection we are currently working with.
 
-  3. Finally, in the last cell, change the collection id in the CSV title. This title could be anything meaningful to you as a researcher, but we do suggest maintaining consistency by using the collection id.
+  3. Finally, in the last cell, change the collection id in the CSV title. This title could be anything meaningful to you as a researcher, but we suggest maintaining consistency using the collection id.
 
 ![Change collection information in notebook](https://github.com/archivesunleashed/Juxta-Collage/blob/77259b474bae859af20da2a99308645c53e8f56c/Juxta-5_change_colab_collection+URL.gif)
 
@@ -125,7 +125,7 @@ Next, create a subfolder in the new directory and call it **images**.
 Our example path to our main working directory looks like this:
 `/Users/fritz/Desktop/13709Juxta`
 
-Using your terminal window, navigate to the images directory. Then use the following command to download all the images from the text file to the images folder. This directory of images is what will be used to create the Juxta collage.
+Using your terminal window, navigate to the images directory. Then use the following command to download all the images from the text file to the images folder. This image directory will be used to create the Juxta collage.
 
 `wget --random-wait -i ../13709_image_urls.txt`
 
