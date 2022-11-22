@@ -19,6 +19,7 @@ Welcome! The following tutorial provides instructions for building an image coll
   - [5. Create .dat file](https://github.com/archivesunleashed/Juxta-Collage#5-create-dat-file)
   - [6. Create collage files](https://github.com/archivesunleashed/Juxta-Collage#6-create-juxta-files)
   - [7. Launch web server](https://github.com/archivesunleashed/Juxta-Collage#7-launch-local-server)
+- [Feedback](https://github.com/archivesunleashed/Juxta-Collage#feedback)
 - [References](https://github.com/archivesunleashed/Juxta-Collage#references)
 - [License](https://github.com/archivesunleashed/Juxta-Collage#license)
 
@@ -26,11 +27,11 @@ Welcome! The following tutorial provides instructions for building an image coll
 
 We recognize the following work and contributions which have made this tutorial possible.
 
-[Toke Eskildsen](https://github.com/tokee) is the creator of Juxta.
+[Toke Eskildsen](https://github.com/tokee) is the creator of the Juxta shell script.
 
-The following tutorial was collaboratively designed by [Nick Ruest](https://ruebot.net/) and [Samantha Fritz](https://github.com/SamFritz).
+The following tutorial was collaboratively designed by [Nick Ruest](https://ruebot.net/) and [Samantha Fritz](https://github.com/SamFritz). Many thanks to [Ian Milligan](https://www.ianmilligan.ca/) for his testing and editorial support.
 
-Google Colab notebooks were built by Nick Ruest, with datasets examples generated using the Archives Research Compute Hub (ARCH).
+The Google Colab notebook was built by Nick Ruest, with datasets examples generated using the Archives Research Compute Hub (ARCH).
 
 * * *
 
@@ -38,7 +39,7 @@ Google Colab notebooks were built by Nick Ruest, with datasets examples generate
 
 Web archive data is a rich source for studying the recent past. Web archives preserve a variety of information formats, including the full text of websites to image and video information, to network links among websites in a collection, and as such, offer a plethora of opportunities to explore web archive data. 
 
-The following tutorial will outline how to create a JUXTA collage using an image dataset generated through the [Archives Research Compute Hub (ARCH)](https://support.archive-it.org/hc/en-us/articles/360061122492-Introduction-to-the-Archive-It-Research-Services-Cloud). By transforming image data, researchers have an opportunity to explore a web archive collection interactively.
+The following tutorial will outline how to create a Juxta collage using an image dataset generated through the [Archives Research Compute Hub (ARCH)](https://support.archive-it.org/hc/en-us/articles/360061122492-Introduction-to-the-Archive-It-Research-Services-Cloud). By transforming image data, researchers have an opportunity to explore a web archive collection interactively.
 
 ## What is Juxta?
 
@@ -151,7 +152,7 @@ Note your path to Juxta; for simplicity's sake in this example, we’ve cloned J
 
 ## 5. Create .dat file
 
-A **.dat** file is a “generic data file that contains important information about the program used to create the particular file.”[^1] For the purposes of generating a JUXTA image collage, we will be converting the jpg image files downloaded from the replay URLs and redirecting the output [^2] as a .dat file format.
+A **.dat** file is a “generic data file that contains important information about the program used to create the particular file.”[^1] For the purposes of generating a Juxta image collage, we will be converting the jpg image files downloaded from the replay URLs and redirecting the output [^2] as a .dat file format.
 
 From your terminal, navigate to be one directory above where the images are saved.
 
@@ -203,9 +204,13 @@ To launch the server, enter the local host address as a URL in a browser of your
   <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
+## Feedback
+
+As this is intended to be a stand-alone resource, please let us know how we can improve the experience of using this tutorial, through our feedback [survey](https://forms.gle/YhrUJJcfqcS8SNrZA).
+
 ## License
 
-Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+[![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
