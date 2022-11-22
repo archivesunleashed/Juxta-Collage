@@ -11,14 +11,14 @@ Welcome! The following tutorial provides instructions for building an image coll
 - [What is a Juxta?](https://github.com/archivesunleashed/Juxta-Collage#what-is-juxta)
 - [Considerations](https://github.com/archivesunleashed/Juxta-Collage#considerations)
 - [Pre-requisites](https://github.com/archivesunleashed/Juxta-Collage#pre-requisites)
-- [Creating a JUXTA Image Collage](https://github.com/archivesunleashed/Juxta-Collage#creating-a-juxta-image-collage)
-  - [1. ARCH - Run image information job](https://github.com/archivesunleashed/Juxta-Collage#1-arch---run-image-information-job)
+- [Creating a Juxta Image Collage](https://github.com/archivesunleashed/Juxta-Collage#creating-a-juxta-image-collage)
+  - [1. ARCH - Run Image Information job](https://github.com/archivesunleashed/Juxta-Collage#1-arch---run-image-information-job)
   - [2. Copy the derivative URL](https://github.com/archivesunleashed/Juxta-Collage#2-copy-the-derivative-url)
-  - [3. Working with Google Colab Notebook](https://github.com/archivesunleashed/Juxta-Collage#3-working-with-google-colab-notebook)
+  - [3. Working with Google Colab](https://github.com/archivesunleashed/Juxta-Collage#3-working-with-google-colab-notebook)
   - [4. Clone Juxta](https://github.com/archivesunleashed/Juxta-Collage#4-clone-juxta)
   - [5. Create .dat file](https://github.com/archivesunleashed/Juxta-Collage#5-create-dat-file)
-  - [6. Create JUXTA files](https://github.com/archivesunleashed/Juxta-Collage#6-create-juxta-files)
-  - [7. Launch Local Server](https://github.com/archivesunleashed/Juxta-Collage#7-launch-local-server)
+  - [6. Create collage files](https://github.com/archivesunleashed/Juxta-Collage#6-create-juxta-files)
+  - [7. Launch web server](https://github.com/archivesunleashed/Juxta-Collage#7-launch-local-server)
 - [References](https://github.com/archivesunleashed/Juxta-Collage#references)
 - [License](https://github.com/archivesunleashed/Juxta-Collage#license)
 
@@ -92,7 +92,7 @@ Once the dataset has been generated, click on "View Dataset" to navigate to the 
   <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
-## 3. Working with Google Colab Notebook
+## 3. Working with Google Colab
 
 Create a copy of the [Image Information Download Urls](https://colab.research.google.com/drive/14tlccAWkvTwy5dDYNlUhmN2hkMV1rxPj?usp=sharing) notebook via Google Colab.
 
@@ -189,7 +189,7 @@ Before launching a local web server, navigate to the example directory created w
   <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
-## 7. Launch Web Server
+## 7. Launch web server
 
 Now that all the files have been created, we will use Python to serve files from a local directory via HTTP. This will allow you to display and explore the image collage through the web browser.
 
