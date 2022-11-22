@@ -4,7 +4,7 @@
   <img src="https://user-images.githubusercontent.com/7362321/200403378-c4e76630-62c4-4f8c-bae5-52bef8810aff.png" alt="Example JUXTA Collage Using Web Archive Image Data" width="600">
 </p>
 
-Welcome! The following tutorial provides instructions for building an image collage using Juxta shell script and image information dataset generated through the Archives Research Compute Hub (ARCH) platform.
+Welcome! The following tutorial provides instructions for building an image collage using [Juxta](https://github.com/tokee/juxta) and a image information dataset generated through the [Archives Research Compute Hub](https://archivesunleashed.org/arch/) (ARCH) platform.
 
 # Table of Contents
 - [Overview](https://github.com/archivesunleashed/Juxta-Collage#overview)
@@ -26,7 +26,7 @@ Welcome! The following tutorial provides instructions for building an image coll
 
 We recognize the following work and contributions which have made this tutorial possible.
 
-[Toke Eskildsen](https://github.com/tokee) is the primary developer and contributor of the juxta script. 
+[Toke Eskildsen](https://github.com/tokee) is the creator of Juxta.
 
 The following tutorial was collaboratively designed by [Nick Ruest](https://ruebot.net/) and [Samantha Fritz](https://github.com/SamFritz).
 
@@ -68,11 +68,11 @@ On Mac OS, both ImageMagick and jq can be installed using brew
 
 * * *
 
-# Creating a JUXTA Image Collage
+# Creating a Juxta Image Collage
 
-## 1. ARCH - Run image information job
+## 1. ARCH - Run Image Information job
 
-Within ARCH, select a collection and generate a new dataset from the file formats category called extract image information.
+Within ARCH, select a collection and generate a new dataset from the "File Formats" category called "Extract Image Information".
 
 ![Run ARCH dataset](https://github.com/archivesunleashed/Juxta-Collage/blob/77259b474bae859af20da2a99308645c53e8f56c/Juxta-2_generate_dataset.gif)
 
@@ -82,7 +82,7 @@ Within ARCH, select a collection and generate a new dataset from the file format
 
 ## 2. Copy the derivative URL
 
-Once the dataset has been generated, click on "View Dataset" to navigate to the summary page. Scroll down to the download icon, right-click  and select “copy link.” This will be the derivate URL needed for working with images in the notebook.
+Once the dataset has been generated, click on "View Dataset" to navigate to the summary page. Scroll down to the download icon, right-click and select “copy link.” This will be the dataset URL needed for working with images in the notebook.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/7362321/200409026-8016b6a8-f6be-4534-8732-35a38a05d440.png" alt="Right click on download to copy dataset URL within ARCH" width="600">
@@ -137,13 +137,13 @@ Using your terminal window, navigate to the images directory. Then use the follo
 
 ## 4. Clone Juxta
 
-Navigate to [https://github.com/tokee/juxta](https://github.com/tokee/juxta). Use the URL provided under the Code Tab to clone. 
+Navigate to [https://github.com/tokee/juxta](https://github.com/tokee/juxta). Use the URL provided under the green "Code" button to clone. 
 
 Clone Juxta within your main directory by using the following command
 
-`Git clone https://github.com/tokee/juxta.git`
+`git clone https://github.com/tokee/juxta.git`
 
-Note your path to Juxta; for simplicity's sake in this example, we’ve cloned JUXTA to our main working directory `/Users/fritz/Desktop/13709Juxta`
+Note your path to Juxta; for simplicity's sake in this example, we’ve cloned Juxta to our main working directory `/Users/fritz/Desktop/13709Juxta`
 
 <p align="right">
   <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
@@ -155,7 +155,7 @@ A **.dat** file is a “generic data file that contains important information ab
 
 From your terminal, navigate to be one directory above where the images are saved.
 
-For instance:		`/Users/fritz/Desktop/13709Juxta`
+For instance:	`/Users/fritz/Desktop/13709Juxta`
 
 Run the following command to find the images and redirect the output to a .dat file
 
@@ -165,11 +165,11 @@ Run the following command to find the images and redirect the output to a .dat f
   <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
-## 6. Create JUXTA files
+## 6. Create collage
 
-Next, will create all of the juxta files and tiles needed to view in a web browser. 
+Next, will create all of the files and tiles needed to view the collage in a web browser. 
 
-We are creating a new directory for all of the JUXTA files. You will need to make a few modifications to the command below: 
+We are creating a new directory for all of the files. You will need to make a few modifications to the command below: 
 
 `THREADS=4 /Users/fritz/Desktop/13709Juxta/juxta/juxta.sh images.dat example`
 
@@ -181,7 +181,7 @@ Here’s a quick breakdown of what this line of code does:
 | `/Users/fritz/Desktop/13709Juxta` | Change to the path of where you’ve cloned Jutxa.                                                                                                                                                                                                                                                   |
 | `example`                         | This will be the name of the directory in which Juxta formatted files are created. You can change this to whatever makes sense for you, but be sure to avoid spaces.                                                                                                                               |
 
-Before launching a local server, navigate to the example directory created with the command above.
+Before launching a local web server, navigate to the example directory created with the command above.
 
 `cd example`
 
@@ -189,9 +189,9 @@ Before launching a local server, navigate to the example directory created with 
   <a href="https://github.com/archivesunleashed/Juxta-Collage#table-of-contents"><b>Back to ToC</b></a>
 </p>
 
-## 7. Launch Local Server
+## 7. Launch Web Server
 
-Now that all the JUXTA files have been created, we will use Python to serve files from a local directory via HTTP. This will allow you to display and explore the image collage through the web browser.
+Now that all the files have been created, we will use Python to serve files from a local directory via HTTP. This will allow you to display and explore the image collage through the web browser.
 
 `python3 -m http.server`
 
