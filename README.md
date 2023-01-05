@@ -192,7 +192,7 @@ Before launching a local web server, navigate to the example directory created w
 
 ## 7. Launch web server
 
-Now that all the files have been created, we will use Python to serve files from a local directory via HTTP. This will allow you to display and explore the image collage through the web browser.
+Now that all the files have been created, we will use Python to serve files from a local directory via HTTP. This will allow you to display and explore the image collage through the web browser. Type the following into terminal:
 
 `python3 -m http.server`
 
